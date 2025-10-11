@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/main.css">
-    <title>Fitness Mart | One Stop to Fitness Products</title>
+    <title>Muscle Mart | One Stop to Fitness Products</title>
 </head>
-<body class="bg-background text-main">
-    <h1>Test Heading</h1>
+
+<body class="oswald bg-background text-main">
+    <!-- Header -->
+    <header id="main-header"
+        class="bg-[#063d58] text-[var(--color-dark-main)] flex justify-between items-center px-6 py-4 shadow-md">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+            <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-44"
+                loading="lazy">
+        </a>
+
+        <!-- Nav -->
+        <nav id="main-nav" class="hidden md:block font-semibold uppercase">
+            <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
+                <li><a href="index.html" class="hover:text-[var(--color-accent)] transition">Home</a></li>
+                <li><a href="categories.html" class="hover:text-[var(--color-accent)] transition">Categories</a></li>
+                <li><a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a></li>
+                <li><a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a></li>
+                <li><a href="reviews.html" class="hover:text-[var(--color-accent)] transition">Reviews</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Button (for small screens) -->
+        <button id="menu-toggle" class="md:hidden text-[var(--color-dark-main)] focus:outline-none">
+            <!-- You can use an icon like lucide or font-awesome here -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="hero-banner" class="relative bg-center bg-cover bg-no-repeat text-white py-32"
+            style="background-image: url('./assets/hero-banner.jpg');">
+            <!-- Overlay for better text contrast -->
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+
+            <div class="relative container mx-auto px-6 flex flex-col items-center text-center space-y-6">
+                <h1 class="text-4xl md:text-6xl font-anton font-bold">
+                    Elevate Your Fitness Journey
+                </h1>
+                <p class="max-w-2xl text-lg md:text-xl text-gray-200">
+                    Discover premium gym gear, workout apparel, and nutrition essentials
+                    designed to help you train smarter and achieve your fitness goals faster.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 mt-4">
+                    <a href="about.html"
+                        class="font-semibold py-3 px-8 rounded-lg hover:bg-yellow-400 hover:text-main hover:underline transition">
+                        About Us
+                    </a>
+                    <a href="categories.html"
+                        class="bg-secondary font-semibold text-main py-3 px-8 rounded-lg hover:bg-[var(--color-accent)] hover:text-[var(--color-main)] transition">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
+
 </html>
