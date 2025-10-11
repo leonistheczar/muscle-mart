@@ -7,6 +7,10 @@
   --color-main: #212121;   /* Text */
   --color-background: #f8f9fa;
 
+  /* Card Content Bg */
+  --color-card: #f8f8ff;
+
+
   /* Dark Offset */
   --color-dark-primary: #023047;
   --color-dark-secondary: #22394f;
