@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -92,17 +92,25 @@
         <!-- Popular Picks -->
         <section id="popular-picks" class="p-8">
             <div class="container">
-                <div id="pick-heading" class="text-center mb-12">
-                    <h1 class="inline-block text-3xl md:text-4xl font-bold pb-2 relative">
+                <div id="pick-heading" class="text-center mb-8">
+                    <h1 class="inline-block text-3xl md:text-4xl font-bold relative">
                         Popular <span class="text-secondary">Picks</span>
-                        <span class="absolute left-0 bottom-0 w-full h-[3px] bg-secondary"></span>
+                    <div id="under-ray" class="h-0.5 w-full bg-secondary mt-2"></div>
                     </h1>
                 </div>
+                <!-- View All -->
+                 <div id="all-products" class="flex justify-center md:justify-end md:mr-8 font-semibold">
+                    <a href="#" class="group text-xl text-primary">
+                        View All
+                    <div id="under-ray" class="hidden md:block h-0.5 w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>    
+                    </a>
+                 </div>
                 <!-- Popular Product Cards  -->
                 <div id="popular-cards"
                     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3 p-6">
                     <!-- Card-1 -->
-                    <div id="card-1" class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <a href="#" id="card-1"
+                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <!-- Image Section -->
                         <div class="card-img overflow-hidden">
@@ -119,15 +127,14 @@
                                     class="text-gray-500">(24)</span></span>
                             <p class="text-lg font-bold text-primary">$1299.99</p>
                         </div>
-
-                        <!-- Full-width Button -->
                         <button
                             class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i>  Add to Cart
+                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                         </button>
-                    </div>
+                    </a>
                     <!-- Card-2 -->
-                    <div id="card-2" class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <a href="#" id="card-2"
+                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <!-- Image Section -->
                         <div class="card-img overflow-hidden">
@@ -143,15 +150,14 @@
                                     class="text-gray-500">(24)</span></span>
                             <p class="text-lg font-bold text-primary">$89.99</p>
                         </div>
-
-                        <!-- Full-width Button -->
                         <button
                             class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i>  Add to Cart
+                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                         </button>
-                    </div>
+                    </a>
                     <!-- Card-3 -->
-                    <div id="card-3" class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <a href="#" id="card-3"
+                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <!-- Image Section -->
                         <div class="card-img overflow-hidden">
@@ -168,15 +174,14 @@
                                     class="text-gray-500">(24)</span></span>
                             <p class="text-lg font-bold text-primary">$1299.99</p>
                         </div>
-
-                        <!-- Full-width Button -->
                         <button
                             class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i>  Add to Cart
+                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                         </button>
-                    </div>
+                    </a>
                     <!-- Card-4 -->
-                    <div id="card-4" class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <a href="#" id="card-4"
+                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <!-- Image Section -->
                         <div class="card-img overflow-hidden">
@@ -193,15 +198,14 @@
                                     class="text-gray-500">(24)</span></span>
                             <p class="text-lg font-bold text-primary">$1299.99</p>
                         </div>
-
-                        <!-- Full-width Button -->
                         <button
                             class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i>  Add to Cart
+                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                         </button>
-                    </div>
+                    </a>
                     <!-- Card-5 -->
-                    <div id="card-5" class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <a href="#" id="card-5"
+                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <!-- Image Section -->
                         <div class="card-img overflow-hidden">
@@ -218,15 +222,14 @@
                                     class="text-gray-500">(24)</span></span>
                             <p class="text-lg font-bold text-primary">$1299.99</p>
                         </div>
-
-                        <!-- Full-width Button -->
                         <button
                             class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i>  Add to Cart
+                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                         </button>
-                    </div>
+                    </a>
                     <!-- Card-6 -->
-                    <div id="card-6" class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <a href="#" id="card-6"
+                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <!-- Image Section -->
                         <div class="card-img overflow-hidden">
@@ -237,21 +240,162 @@
                         <!-- Card Content -->
                         <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
                             <h3 class="text-lg font-semibold text-gray-900">Battle Ropes</h3>
-                            <p class="text-sm text-gray-600">Heavy-duty battle ropes for intense conditioning workouts</p>
+                            <p class="text-sm text-gray-600">Heavy-duty battle ropes for intense conditioning workouts
+                            </p>
                             <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
                                     class="text-gray-500">(24)</span></span>
                             <p class="text-lg font-bold text-primary">$89.99</p>
                         </div>
-
-                        <!-- Full-width Button -->
                         <button
                             class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i>  Add to Cart
+                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                         </button>
-                    </div>
-            </div>
+                    </a>
+                </div>
             </div>
         </section>
+        <!-- Sale Banner -->
+        <section id="sale-banner" class="p-8 group">
+            <a href="#"
+                class="block relative w-full h-[50vh] sm:h-[60vh] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden shadow-lg"
+                style="background-image: url('./assets/sale_banner.jpg'); background-position: 50% 40%;">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/50 transition-all duration-300 group-hover:bg-black/40"></div>
+
+                <!-- Content -->
+                <div
+                    class="relative flex flex-col items-end justify-center h-full p-8 text-white text-right space-y-2">
+                    <h2 class="text-xl sm:text-2xl font-bold uppercase tracking-widest italic">
+                        Limited Time Offer!
+                    </h2>
+                    <p class="text-3xl sm:text-4xl font-semibold">
+                        Extra <span class="text-accent italic text-5xl sm:text-6xl font-extrabold">50%</span> Off!
+                    </p>
+                    <span class="inline-block mt-4 bg-accent text-main font-semibold px-6 py-3 rounded-md">
+                        Shop Now
+                    </span>
+                </div>
+            </a>
+        </section>
+        <!-- 🏋️‍♂️ Activewear Picks Section -->
+<section id="activewear-picks" class="p-8 bg-background">
+  <div class="container mx-auto">
+
+    <!-- Heading -->
+    <div id="activewear-heading" class="text-center mb-6 flex justify-center items-center">
+      <span class="sm:w-[32px] sm:h-[32px] md:w-auto md:h-auto md:-translate-y-6 -rotate-[20deg] md:translate-x-2"><img src="./assets/activewear/new-icon.png" alt=""></span>
+      <h1 class="text-2xl md:text-4xl font-bold relative">Activewear <span class="text-secondary">Picks</span>
+        <div class="h-0.5 w-full bg-secondary mt-2"></div>
+      </h1>
+    </div>
+
+    <!-- View All Link -->
+    <div class="flex justify-center md:justify-end md:mr-6 mb-4 font-semibold">
+      <a href="#" class="group text-lg text-primary">
+        View All
+        <div class="h-0.5 w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+      </a>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="activewear-cards"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-4">
+
+      <!-- 🧢 Activewear Card -->
+      <a href="#" class="group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+
+        <!-- Image -->
+        <div class="overflow-hidden bg-gray-50 flex items-center justify-center">
+          <img src="./assets/activewear/black-tees.jpg" alt="Black T-Shirt"
+            class="w-full h-64 object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
+        </div>
+
+        <!-- Content -->
+        <div class="p-4 space-y-2 text-main">
+          <h3 class="text-lg font-semibold">Black Tee</h3>
+          <p class="text-sm text-gray-600">Premium cotton activewear T-shirt with soft stretch fit.</p>
+          <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span class="text-gray-500">(24)</span></span>
+          <p class="text-lg font-bold text-primary">$29.99</p>
+        </div>
+
+        <!-- Add to Cart -->
+        <button class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main">
+          <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+        </button>
+      </a>
+
+      <!-- 👕 Product Card -->
+      <a href="#" class="group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="overflow-hidden bg-gray-50 flex items-center justify-center">
+          <img src="./assets/activewear/gray-track-suit.jpg" alt="Gray Track Suit"
+            class="w-full h-64 object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
+        </div>
+        <div class="p-4 space-y-2 text-main">
+          <h3 class="text-lg font-semibold">Gray Track Suit</h3>
+          <p class="text-sm text-gray-600">Lightweight full-zip tracksuit for high mobility workouts.</p>
+          <span class="text-sm font-medium text-yellow-500">⭐ 4.8 <span class="text-gray-500">(31)</span></span>
+          <p class="text-lg font-bold text-primary">$89.99</p>
+        </div>
+        <button class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main">
+          <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+        </button>
+      </a>
+
+      <!-- 🩳 Product Card -->
+      <a href="#" class="group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="overflow-hidden bg-gray-50 flex items-center justify-center">
+          <img src="./assets/activewear/green-shorts.jpg" alt="Green Shorts"
+            class="w-full h-64 object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
+        </div>
+        <div class="p-4 space-y-2 text-main">
+          <h3 class="text-lg font-semibold">Green Shorts</h3>
+          <p class="text-sm text-gray-600">Breathable quick-dry workout shorts with stretch waistband.</p>
+          <span class="text-sm font-medium text-yellow-500">⭐ 4.6 <span class="text-gray-500">(18)</span></span>
+          <p class="text-lg font-bold text-primary">$24.99</p>
+        </div>
+        <button class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main">
+          <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+        </button>
+      </a>
+
+      <!-- 🧥 Product Card -->
+      <a href="#" class="group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="overflow-hidden bg-gray-50 flex items-center justify-center">
+          <img src="./assets/activewear/track-suit-hoodie.jpg" alt="Track Suit Hoodie"
+            class="w-full h-64 object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
+        </div>
+        <div class="p-4 space-y-2 text-main">
+          <h3 class="text-lg font-semibold">Track Suit Hoodie</h3>
+          <p class="text-sm text-gray-600">Comfort-fit hoodie tracksuit perfect for gym or street wear.</p>
+          <span class="text-sm font-medium text-yellow-500">⭐ 4.9 <span class="text-gray-500">(42)</span></span>
+          <p class="text-lg font-bold text-primary">$99.99</p>
+        </div>
+        <button class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main">
+          <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+        </button>
+      </a>
+
+      <!-- 👖 Product Card -->
+      <a href="#" class="group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="overflow-hidden bg-gray-50 flex items-center justify-center">
+          <img src="./assets/activewear/workout-trouser.jpg" alt="Workout Trouser"
+            class="w-full h-64 object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
+        </div>
+        <div class="p-4 space-y-2 text-main">
+          <h3 class="text-lg font-semibold">Workout Trouser</h3>
+          <p class="text-sm text-gray-600">Slim-fit training trousers with moisture-wicking fabric.</p>
+          <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span class="text-gray-500">(27)</span></span>
+          <p class="text-lg font-bold text-primary">$49.99</p>
+        </div>
+        <button class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main">
+          <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+
     </main>
 </body>
 
