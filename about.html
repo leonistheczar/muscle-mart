@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>Muscle Mart | One Stop to Fitness Products</title>
+</head>
+
+<body class="oswald bg-background text-main">
+    <!-- Header -->
+    <header id="main-header"
+        class="bg-[#063d58] text-[var(--color-dark-main)] flex justify-between items-center px-6 py-4 shadow-md">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+            <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
+                loading="lazy">
+        </a>
+
+        <!-- Nav -->
+        <nav id="main-nav" class="hidden md:block font-semibold uppercase">
+            <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
+                <li class="overflow-hidden group">
+                    <a href="index.html" class="hover:text-[var(--color-accent)] transition">Home</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="categories.html" class="hover:text-[var(--color-accent)] transition">Categories</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="reviews.html" class="hover:text-[var(--color-accent)] transition">Reviews</a>
+                    <div id="under-ray" class="h-0.5 w-full bg-accent"></div>
+                </li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu Button (for small screens) -->
+        <button id="menu-toggle" class="md:hidden text-[var(--color-dark-main)] focus:outline-none">
+            <!-- You can use an icon like lucide or font-awesome here -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </header>
+    <main id="about-main">
+        <section id="about-showcase" class="bg-dark-main py-10">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 items-stretch">
+                <div id="about-img" class="col-span-1 h-full">
+                    <img src="./assets/about-hero.jpg" alt="Gym Group"
+                        class="w-full h-full object-cover rounded-lg shadow-lg">
+                </div>
+                <div id="about-content" class="col-span-2 p-6 md:p-12 flex flex-col justify-center">
+                    <h1 id="about-heading" class="text-4xl sm:text-center md:text-left font-bold mb-6">
+                        Our <span class="text-secondary">Story</span>
+                    </h1>
+
+                    <div id="about-desc" class="flex flex-col gap-y-4 text-lg leading-relaxed">
+                        <p>
+                            Founded in 2024,
+                            <span class="italic text-primary text-2xl">MuscleMart</span>
+                            started with a mission to make premium fitness gear accessible to everyone —
+                            from beginners taking their first steps into the gym to athletes chasing personal bests.
+                            What began as a small collection of resistance bands and gloves has evolved into a trusted
+                            destination for all things fitness.
+                        </p>
+
+                        <p>
+                            At MuscleMart, we believe the right gear can elevate performance, inspire consistency, and
+                            fuel
+                            passion. Every product we offer — from activewear to training accessories — is handpicked
+                            for
+                            durability, comfort, and style, ensuring you perform your best while looking your best.
+                        </p>
+
+                        <p>
+                            Our journey is built on a simple philosophy: fitness is for everyone. Whether you train at
+                            home,
+                            in the gym, or outdoors, MuscleMart stands with you at every rep, run, and recovery.
+                            Together, we’re not just building stronger bodies — we’re building a stronger community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+         <section id="testimonials-showcase" class="py-8">
+             <div id="pick-heading" class="flex justify-center text-center mb-8">
+                    <h1 class="text-3xl md:text-4xl font-bold relative">
+                        Testimonials
+                    <div id="under-ray" class="h-0.5 w-full bg-secondary mt-2"></div>
+                    </h1>
+                </div>
+                <div id="testimonials" class="">
+                    <div class="container mx-auto grid grid-cols-6 p-4 gap-x-8">
+                        <div id="testimonial-logo-1" class="testimonial-logo overflow-hidden rounded-full">
+                            <img src="./assets/logos/upeven.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        </div>
+                        <div id="testimonial-logo-2" class="testimonial-logo rounded-full overflow-hidden">
+                            <img src="./assets/logos/accurate-archery.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        </div>
+                        <div id="testimonial-logo-3" class="testimonial-logo rounded-full overflow-hidden">
+                            <img src="./assets/logos/elite-physique.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        </div>
+                        <div id="testimonial-logo-4" class="testimonial-logo rounded-full overflow-hidden">
+                            <img src="./assets/logos/fitness-expo.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        </div>
+                        <div id="testimonial-logo-5" class="testimonial-logo rounded-full overflow-hidden">
+                            <img src="./assets/logos/miga-bri.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        </div>
+                        <div id="testimonial-logo-6" class="testimonial-logo rounded-full overflow-hidden">
+                            <img src="./assets/logos/my-stron.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        </div>
+
+                    </div>
+                </div>
+         </section>
+    </main>
+</body>
+
+</html>

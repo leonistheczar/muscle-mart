@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>Muscle Mart | One Stop to Fitness Products</title>
+</head>
+
+<body class="oswald bg-background text-main">
+    <!-- Header -->
+    <header id="main-header"
+        class="bg-[#063d58] text-[var(--color-dark-main)] flex justify-between items-center px-6 py-4 shadow-md">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+            <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
+                loading="lazy">
+        </a>
+
+        <!-- Nav -->
+        <nav id="main-nav" class="hidden md:block font-semibold uppercase">
+            <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
+                <li class="overflow-hidden group">
+                    <a href="index.html" class="hover:text-[var(--color-accent)] transition">Home</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="categories.html" class="hover:text-[var(--color-accent)] transition">Categories</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="reviews.html" class="hover:text-[var(--color-accent)] transition">Reviews</a>
+                    <div id="under-ray" class="h-0.5 w-full bg-accent"></div>
+                </li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu Button (for small screens) -->
+        <button id="menu-toggle" class="md:hidden text-[var(--color-dark-main)] focus:outline-none">
+            <!-- You can use an icon like lucide or font-awesome here -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </header>
+    <!-- Main  -->
+     <main id="reviews-main">
+        <section id="user-reviews" class="p-8 flex flex-col justify-center">
+            <div class="container w-full h-[80dvh] bg-secondary">
+            <div id="pick-heading" class="flex justify-center text-center my-6">
+                    <h1 class="text-3xl md:text-4xl font-bold relative text-[#f0f0f0]">
+                        User <span class="">Reviews</span>
+                    <div id="under-ray" class="h-0.5 w-full bg-secondary mt-2"></div>
+                    </h1>
+                </div>
+                <div id="carousels-group" class="">
+                    <div id="carousels-card">
+                        <div class="carousel" id="carousel-1">1</div>
+                        <div class="carousel" id="carousel-2">2</div>
+                        <div class="carousel" id="carousel-3">3</div>
+                        <div class="carousel" id="carousel-4">4</div>
+                        <div class="carousel" id="carousel-5">5</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
