@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/css/main.css">
-    <title>About Us | Muscle Mart</title>
+    <title>Contact Us | Muscle Mart</title>
 </head>
 
 <body id="about-body" class="oswald bg-background text-main">
@@ -32,11 +32,11 @@
                 </li>
                 <li class="overflow-hidden group">
                     <a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a>
-                    <div id="under-ray" class="h-0.5 w-full bg-accent"></div>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
                 </li>
                 <li class="overflow-hidden group">
                     <a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a>
-                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                    <div id="under-ray" class="h-0.5 w-full bg-accent"></div>
                 </li>
                 <li class="overflow-hidden group">
                     <a href="reviews.html" class="hover:text-[var(--color-accent)] transition">Reviews</a>
@@ -53,83 +53,45 @@
             </svg>
         </button>
     </header>
-    <main id="about-main">
-        <!-- About Section -->
-        <section id="about-showcase" class="bg-dark-main py-10">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 items-stretch">
-                <div id="about-img" class="col-span-1 h-full">
-                    <img src="./assets/about-hero.jpg" alt="Gym Group"
-                        class="w-full h-full object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-500">
-                </div>
-                <div id="about-content" class="col-span-2 p-6 md:p-12 flex flex-col justify-center">
-                    <h1 id="about-heading" class="text-4xl sm:text-center md:text-left font-bold mb-6">
-                        Our <span class="text-secondary">Story</span>
-                    </h1>
-
-                    <div id="about-desc" class="flex flex-col gap-y-4 text-lg leading-relaxed">
-                        <p>
-                            Founded in 2024,
-                            <span class="italic text-primary text-2xl">MuscleMart</span>
-                            started with a mission to make premium fitness gear accessible to everyone —
-                            from beginners taking their first steps into the gym to athletes chasing personal bests.
-                            What began as a small collection of resistance bands and gloves has evolved into a trusted
-                            destination for all things fitness.
-                        </p>
-
-                        <p>
-                            At MuscleMart, we believe the right gear can elevate performance, inspire consistency, and
-                            fuel
-                            passion. Every product we offer — from activewear to training accessories — is handpicked
-                            for
-                            durability, comfort, and style, ensuring you perform your best while looking your best.
-                        </p>
-
-                        <p>
-                            Our journey is built on a simple philosophy: fitness is for everyone. Whether you train at
-                            home,
-                            in the gym, or outdoors, MuscleMart stands with you at every rep, run, and recovery.
-                            Together, we’re not just building stronger bodies — we’re building a stronger community.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonials -->
-         <section id="testimonials-showcase" class="pt-8">
-             <div id="pick-heading" class="flex justify-center text-center mb-8">
-                    <h1 class="text-3xl md:text-4xl font-bold relative">
-                        Testimonials
-                    <div id="under-ray" class="h-0.5 w-full bg-secondary mt-2"></div>
+    <main id="contact-main">
+        <!-- Contact Section -->
+         <section id="contact" class="bg-secondary p-8">
+            <div id="contact-heading" class="flex justify-center text-center">
+                    <h1 class="text-3xl text-dark-main md:text-4xl font-bold relative">
+                        Contact<span class=""> Us</span> 
+                    <div id="under-ray" class="h-0.5 w-full bg-dark-background mt-2"></div>
                     </h1>
                 </div>
-                <div id="testimonials" class="bg-neutral-200">
-                    <div class="container mx-auto grid grid-cols-6 p-4 gap-x-8">
-                        <div id="testimonial-logo-1" class="testimonial-logo overflow-hidden rounded-full transition-all hover:scale-105">
-                            <img src="./assets/logos/upeven.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                <div class="container bg-dark-main mx-auto rounded-xl mt-4 p-4 md:p-8 shadow-[0px 12px 18px 10px rgba(0, 0, 0, 0.25)]">
+                    <form id="contact-form" class="flex flex-col sm:grid sm:grid-cols-2 gap-4">
+                        <div class="flex flex-col gap-y-1">
+                            <label for="first-name">First Name</label>
+                            <input placeholder="Enter your First Name" type="text" class="border-[1px] outline-0 px-1.5 py-1 border-dark-secondary transition-all focus:border-secondary rounded-[2px]" name="first-name" id="first-name">
                         </div>
-                        <div id="testimonial-logo-2" class="testimonial-logo rounded-full overflow-hidden transition-all hover:scale-105">
-                            <img src="./assets/logos/accurate-archery.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        <div class="flex flex-col gap-y-1">
+                            <label for="last-name">Last Name</label>
+                            <input placeholder="Enter your Last Name" type="text" class="border-[1px] outline-0 px-1.5 py-1 border-dark-secondary transition-all focus:border-secondary rounded-[2px]" name="last-name" id="last-name">
                         </div>
-                        <div id="testimonial-logo-3" class="testimonial-logo rounded-full overflow-hidden transition-all hover:scale-105">
-                            <img src="./assets/logos/elite-physique.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        <div class="flex flex-col gap-y-1">
+                            <label for="email">Email</label>
+                            <input placeholder="Enter your Email" type="email" class="border-[1px] outline-0 px-1.5 py-1 border-dark-secondary transition-all focus:border-secondary rounded-[2px]" name="email" id="email">
                         </div>
-                        <div id="testimonial-logo-4" class="testimonial-logo rounded-full overflow-hidden transition-all hover:scale-105">
-                            <img src="./assets/logos/fitness-expo.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        <div class="flex flex-col gap-y-1">
+                            <label for="phone-number">Phone Number</label>
+                            <input placeholder="Enter your Phone Number" type="text" class="border-[1px] outline-0 px-1.5 py-1 border-dark-secondary transition-all focus:border-secondary rounded-[2px]" name="phone-number" id="phone-number">
                         </div>
-                        <div id="testimonial-logo-5" class="testimonial-logo rounded-full overflow-hidden transition-all hover:scale-105">
-                            <img src="./assets/logos/miga-bri.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
+                        <div class="flex flex-col gap-y-1 col-span-2 mb-2">
+                            <label for="message">Message</label>
+                            <textarea placeholder="Say anything..." name="message" class="resize border-[1px] outline-0 px-1.5 py-1 border-dark-secondary transition-all focus:border-secondary rounded-[2px]" id="message"></textarea>
                         </div>
-                        <div id="testimonial-logo-6" class="testimonial-logo rounded-full overflow-hidden transition-all hover:scale-105">
-                            <img src="./assets/logos/my-stron.png"  alt="upeven" class="w-full h-full object-contain rounded-full" loading="lazy">
-                        </div>
-
-                    </div>
+                        <button type="submit" class="bg-secondary w-fit px-4 py-2 rounded-lg cursor-pointer transition-all hover:bg-accent col-span-2">Submit</button>
+                    </form>
                 </div>
          </section>
     </main>
         <!-- Footer -->
     <footer id="main-footer" class="bg-primary text-dark-main p-8">
-        <div class="container flex items-center justify-between">
+        <div class="container flex flex-col md:flex-row items-center justify-between space-y-8">
             <div id="footer-logo">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center">

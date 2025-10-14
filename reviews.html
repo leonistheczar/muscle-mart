@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/css/main.css">
-    <title>Muscle Mart | One Stop to Fitness Products</title>
+    <title>User Reviews | Muscle Mart</title>
 </head>
 
-<body class="oswald bg-background text-main">
+<body id="review-body" class="oswald bg-background text-main">
     <!-- Header -->
     <header id="main-header"
-        class="bg-[#063d58] text-[var(--color-dark-main)] flex justify-between items-center px-6 py-4 shadow-md">
+        class="bg-[#063d58] text-[var(--color-dark-main)] border-b-4 border-accent flex justify-between items-center px-6 py-4 shadow-md">
         <!-- Logo -->
         <a href="index.html" class="flex items-center">
             <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
@@ -54,13 +54,13 @@
         </button>
     </header>
     <!-- Main  -->
-     <main id="reviews-main">
+    <main id="reviews-main">
         <section id="user-reviews" class="p-8 flex flex-col justify-center">
             <div class="container w-full h-[80dvh] bg-secondary">
-            <div id="pick-heading" class="flex justify-center text-center my-6">
+                <div id="pick-heading" class="flex justify-center text-center my-6">
                     <h1 class="text-3xl md:text-4xl font-bold relative text-[#f0f0f0]">
                         User <span class="">Reviews</span>
-                    <div id="under-ray" class="h-0.5 w-full bg-secondary mt-2"></div>
+                        <div id="under-ray" class="h-0.5 w-full bg-secondary mt-2"></div>
                     </h1>
                 </div>
                 <div id="carousels-group" class="">
@@ -74,4 +74,46 @@
                 </div>
             </div>
         </section>
-     </main>
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-primary text-dark-main p-8">
+        <div class="container flex items-center justify-between">
+            <div id="footer-logo">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
+                        loading="lazy">
+                </a>
+            </div>
+            <!-- Nav Links -->
+            <ul class="grid grid-cols-2 gap-y-2 border-l-4 border-dark-main px-4 text-lg">
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="#index-body">Home</a>
+                </li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition"
+                        href="categories.html">Categories</a></li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="about.html">About Us</a>
+                </li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="contact.html">Contact
+                        Us</a></li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="#review-body">User
+                        Reviews</a></li>
+            </ul>
+            <!-- Social Links -->
+            <div id="socials" class="flex gap-x-1.5">
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
