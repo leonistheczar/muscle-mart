@@ -27,7 +27,7 @@
                     <div id="under-ray" class="h-0.5 w-full bg-accent"></div>
                 </li>
                 <li class="overflow-hidden group">
-                    <a href="categories.html" class="hover:text-[var(--color-accent)] transition">Categories</a>
+                    <a href="products.html" class="hover:text-[var(--color-accent)] transition">Products</a>
                     <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
                 </li>
                 <li class="overflow-hidden group">
@@ -82,7 +82,7 @@
                         class="font-semibold py-3 px-8 rounded-lg border-2 border-white hover:bg-white hover:text-black transition-all duration-300">
                         About Us
                     </a>
-                    <a href="categories.html"
+                    <a href="products.html"
                         class="bg-secondary font-semibold text-main py-3 px-8 rounded-lg hover:bg-yellow-400 hover:scale-105 transition-all duration-300 shadow-lg">
                         Shop Now
                     </a>
@@ -91,7 +91,7 @@
         </section>
         <!-- Popular Picks -->
         <section id="popular-picks" class="p-8">
-            <div class="container">
+            <div class="container mx-auto">
                 <div id="pick-heading" class="text-center mb-8">
                     <h1 class="inline-block text-3xl md:text-4xl font-bold relative">
                         Popular <span class="text-secondary">Picks</span>
@@ -100,7 +100,7 @@
                 </div>
                 <!-- View All -->
                 <div id="all-products" class="flex justify-center md:justify-end md:mr-8 font-semibold">
-                    <a href="#" class="group text-xl text-primary">
+                    <a href="products.html" class="group text-xl text-primary">
                         View All
                         <div id="under-ray"
                             class="hidden md:block h-0.5 w-0 bg-accent transition-all duration-500 group-hover:w-full">
@@ -109,7 +109,7 @@
                 </div>
                 <!-- Popular Product Cards  -->
                 <div id="popular-cards"
-                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3 p-6">
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 justify-center items-center gap-3 p-6">
                     <!-- Card-1 -->
                     <a href="#" id="card-1"
                         class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -122,134 +122,15 @@
 
                         <!-- Card Content -->
                         <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
-                            <h3 class="text-lg font-semibold text-gray-900">Elliptical Machine</h3>
-                            <p class="text-sm text-gray-600">Front-drive elliptical with adjustable stride and incline
+                            <h3 class="product-name text-lg font-semibold text-gray-900">Elliptical Machine</h3>
+                            <p class="product-desc text-sm text-gray-600">Front-drive elliptical with adjustable stride and incline
                             </p>
-                            <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
-                                    class="text-gray-500">(24)</span></span>
-                            <p class="text-lg font-bold text-primary">$1299.99</p>
+                            <span class="product-rating text-sm font-medium text-yellow-500">⭐ 4.7 <span
+                                    class="product-rating text-gray-500">(24)</span></span>
+                            <p class="product-price text-lg font-bold text-primary">$1299.99</p>
                         </div>
                         <button
                             class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
-                        </button>
-                    </a>
-                    <!-- Card-2 -->
-                    <a href="#" id="card-2"
-                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-
-                        <!-- Image Section -->
-                        <div class="card-img overflow-hidden">
-                            <img src="./assets/products/boxing_gloves.jpg" alt="Elliptical Machine"
-                                class="w-full h-56 object-contain transition-transform duration-500 group-hover:scale-110" />
-                        </div>
-
-                        <!-- Card Content -->
-                        <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
-                            <h3 class="text-lg font-semibold text-gray-900">Boxing Gloves Pro</h3>
-                            <p class="text-sm text-gray-600">Professional training boxing gloves with wrist support</p>
-                            <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
-                                    class="text-gray-500">(24)</span></span>
-                            <p class="text-lg font-bold text-primary">$89.99</p>
-                        </div>
-                        <button
-                            class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
-                        </button>
-                    </a>
-                    <!-- Card-3 -->
-                    <a href="#" id="card-3"
-                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-
-                        <!-- Image Section -->
-                        <div class="card-img overflow-hidden">
-                            <img src="./assets/products/cardio-equipment.jpg" alt="Elliptical Machine"
-                                class="w-full h-56 object-contain transition-transform duration-500 group-hover:scale-110" />
-                        </div>
-
-                        <!-- Card Content -->
-                        <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
-                            <h3 class="text-lg font-semibold text-gray-900">Elliptical Machine</h3>
-                            <p class="text-sm text-gray-600">Front-drive elliptical with adjustable stride and incline
-                            </p>
-                            <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
-                                    class="text-gray-500">(24)</span></span>
-                            <p class="text-lg font-bold text-primary">$1299.99</p>
-                        </div>
-                        <button
-                            class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
-                        </button>
-                    </a>
-                    <!-- Card-4 -->
-                    <a href="#" id="card-4"
-                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-
-                        <!-- Image Section -->
-                        <div class="card-img overflow-hidden">
-                            <img src="./assets/products/olympic-barbell-45lbs.webp" alt="Elliptical Machine"
-                                class="w-full h-56 object-contain transition-transform duration-500 group-hover:scale-110" />
-                        </div>
-
-                        <!-- Card Content -->
-                        <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
-                            <h3 class="text-lg font-semibold text-gray-900">Elliptical Machine</h3>
-                            <p class="text-sm text-gray-600">Front-drive elliptical with adjustable stride and incline
-                            </p>
-                            <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
-                                    class="text-gray-500">(24)</span></span>
-                            <p class="text-lg font-bold text-primary">$1299.99</p>
-                        </div>
-                        <button
-                            class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
-                        </button>
-                    </a>
-                    <!-- Card-5 -->
-                    <a href="#" id="card-5"
-                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-
-                        <!-- Image Section -->
-                        <div class="card-img overflow-hidden">
-                            <img src="./assets/products/suspension-trainer.webp" alt="Elliptical Machine"
-                                class="w-full h-56 object-contain transition-transform duration-500 group-hover:scale-110" />
-                        </div>
-
-                        <!-- Card Content -->
-                        <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
-                            <h3 class="text-lg font-semibold text-gray-900">Elliptical Machine</h3>
-                            <p class="text-sm text-gray-600">Front-drive elliptical with adjustable stride and incline
-                            </p>
-                            <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
-                                    class="text-gray-500">(24)</span></span>
-                            <p class="text-lg font-bold text-primary">$1299.99</p>
-                        </div>
-                        <button
-                            class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
-                        </button>
-                    </a>
-                    <!-- Card-6 -->
-                    <a href="#" id="card-6"
-                        class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-
-                        <!-- Image Section -->
-                        <div class="card-img overflow-hidden">
-                            <img src="./assets/products/battle-ropes.jpg" alt="Elliptical Machine"
-                                class="w-full h-52 object-contain transition-transform duration-500 group-hover:scale-110" />
-                        </div>
-
-                        <!-- Card Content -->
-                        <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
-                            <h3 class="text-lg font-semibold text-gray-900">Battle Ropes</h3>
-                            <p class="text-sm text-gray-600">Heavy-duty battle ropes for intense conditioning workouts
-                            </p>
-                            <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
-                                    class="text-gray-500">(24)</span></span>
-                            <p class="text-lg font-bold text-primary">$89.99</p>
-                        </div>
-                        <button
-                            class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main  hover:cursor-pointer">
                             <i class="fa-solid fa-bag-shopping"></i> Add to Cart
                         </button>
                     </a>
@@ -258,7 +139,7 @@
         </section>
         <!-- Sale Banner -->
         <section id="sale-banner" class="p-8 group">
-            <a href="#"
+            <a href="products.html"
                 class="block relative w-full h-[50vh] sm:h-[60vh] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden shadow-lg"
                 style="background-image: url('./assets/sale_banner.jpg'); background-position: 50% 40%;">
                 <!-- Overlay -->
@@ -295,7 +176,7 @@
 
                 <!-- View All Link -->
                 <div class="flex justify-center md:justify-end md:mr-6 mb-4 font-semibold">
-                    <a href="#" class="group text-lg text-primary">
+                    <a href="products.html" class="group text-lg text-primary">
                         View All
                         <div class="h-0.5 w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
                     </a>
@@ -419,9 +300,9 @@
             </div>
         </section>
     </main>
-    <!-- Footer -->
+  <!-- Footer -->
     <footer id="main-footer" class="bg-primary text-dark-main p-8">
-        <div class="container flex items-center justify-between">
+        <div class="container flex flex-col md:flex-row items-center justify-between space-y-8">
             <div id="footer-logo">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center">
@@ -431,11 +312,11 @@
             </div>
             <!-- Nav Links -->
             <ul class="grid grid-cols-2 gap-y-2 border-l-4 border-dark-main px-4 text-lg">
-                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="#index-body">Home</a>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="index.html">Home</a>
                 </li>
                 <li class="group"><a class="hover:text-[var(--color-accent)] transition"
-                        href="categories.html">Categories</a></li>
-                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="about.html">About Us</a>
+                        href="products.html">Products</a></li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="#about-body">About Us</a>
                 </li>
                 <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="contact.html">Contact
                         Us</a></li>
@@ -459,6 +340,8 @@
             </div>
         </div>
     </footer>
+    <!-- JS Script -->
+     <script type="module" src="./src/js/app.js"></script>
 </body>
 
 </html>

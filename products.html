@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>All Products | Muscle Mart</title>
+</head>
+
+<body id="product-body" class="oswald bg-background text-main">
+    <!-- Header -->
+    <header id="main-header"
+        class="bg-[#063d58] text-[var(--color-dark-main)] border-b-4 border-accent flex justify-between items-center px-6 py-4 shadow-md">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+            <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
+                loading="lazy">
+        </a>
+
+        <!-- Nav -->
+        <nav id="main-nav" class="hidden md:block font-semibold uppercase">
+            <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
+                <li class="overflow-hidden group">
+                    <a href="index.html" class="hover:text-[var(--color-accent)] transition">Home</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="categories.html" class="hover:text-[var(--color-accent)] transition">Products</a>
+                    <div id="under-ray" class="h-0.5 w-full bg-accent"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="reviews.html" class="hover:text-[var(--color-accent)] transition">Reviews</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu Button (for small screens) -->
+        <button id="menu-toggle" class="md:hidden text-[var(--color-dark-main)] focus:outline-none">
+            <!-- You can use an icon like lucide or font-awesome here -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </header>
+    <main id="products-main">
+        <div id="filter-product">
+        </div>
+        <section id="products" class="p-8">
+            <div id="products-heading" class="flex justify-center text-center mb-8">
+                <h1 class="text-3xl md:text-4xl font-bold relative">
+                    All <span class="text-secondary">Products</span>
+                    <div id="under-ray" class="h-0.5 w-full bg-secondary mt-2"></div>
+                </h1>
+            </div>
+            <div id="categories-layout" class="grid grid-cols-1 md:grid-cols-3 gap-2">
+            <!-- Filter Section -->
+            <div id="filter" class="border-b-4 col-span-1 border-primary px-3 md:py-6">
+                <div id="filter-heading" class="flex justify-between items-center sm:p-3">
+                    <h2 id="" class="text-xl font-semibold text-gray-800 mb-4">Filter Products</h2>
+                    <a href="#" class="md:hidden inline-block mb-4 transition-all hover:text-accent"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                    <ul id="categories" class="hidden w-full sm:block space-y-3">
+                        <!-- Category Item -->
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" name="activewear" id="activewear"
+                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                            <label for="activewear"
+                                class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
+                                Activewear
+                            </label>
+                        </li>
+    
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" name="accessories" id="accessories"
+                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                            <label for="accessories"
+                                class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
+                                Accessories
+                            </label>
+                        </li>
+    
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" name="benches_racks" id="benches_racks"
+                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                            <label for="benches_racks"
+                                class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
+                                Benches & Racks
+                            </label>
+                        </li>
+    
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" name="boxing_equipment" id="boxing_equipment"
+                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                            <label for="boxing_equipment"
+                                class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
+                                Boxing Equipment
+                            </label>
+                        </li>
+    
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" name="cardio_equipment" id="cardio_equipment"
+                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                            <label for="cardio_equipment"
+                                class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
+                                Cardio Equipment
+                            </label>
+                        </li>
+    
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" name="functional_training" id="functional_training"
+                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                            <label for="functional_training"
+                                class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
+                                Functional Training
+                            </label>
+                        </li>
+    
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" name="free_weights" id="free_weights"
+                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                            <label for="free_weights"
+                                class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
+                                Free Weights
+                            </label>
+                        </li>
+    
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" name="recovery" id="recovery"
+                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                            <label for="recovery"
+                                class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
+                                Recovery
+                            </label>
+                        </li>
+                        <li><button id="reset-filter" class="mt-3 cursor-pointer bg-primary px-4 py-2 rounded-lg text-dark-main transition-all hover:bg-accent hover:text-main active:-translate-0.5">Reset</button></li>
+                    </ul>
+                </div>
+                <!-- All products -->
+                <div class="container col-span-2">
+                    <div id="popular-cards"
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3 p-6">
+                        <!-- Card-1 -->
+                        <a href="#" id="card-1"
+                            class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    
+                            <!-- Image Section -->
+                            <div class="card-img overflow-hidden">
+                                <img src="./assets/products/elliptical-machine.webp" alt="Elliptical Machine"
+                                    class="w-full h-56 object-contain transition-transform duration-500 group-hover:scale-110" />
+                            </div>
+    
+                            <!-- Card Content -->
+                            <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
+                                <h3 class="text-lg font-semibold text-gray-900">Elliptical Machine</h3>
+                                <p class="text-sm text-gray-600">Front-drive elliptical with adjustable stride and incline
+                                </p>
+                                <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
+                                        class="text-gray-500">(24)</span></span>
+                                <p class="text-lg font-bold text-primary">$1299.99</p>
+                            </div>
+                            <button
+                                class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main hover:cursor-pointer">
+                                <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                            </button>
+                        </a>
+                        <!-- Card-1 -->
+                        <a href="#" id="card-1"
+                            class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    
+                            <!-- Image Section -->
+                            <div class="card-img overflow-hidden">
+                                <img src="./assets/products/elliptical-machine.webp" alt="Elliptical Machine"
+                                    class="w-full h-56 object-contain transition-transform duration-500 group-hover:scale-110" />
+                            </div>
+    
+                            <!-- Card Content -->
+                            <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
+                                <h3 class="text-lg font-semibold text-gray-900">Elliptical Machine</h3>
+                                <p class="text-sm text-gray-600">Front-drive elliptical with adjustable stride and incline
+                                </p>
+                                <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
+                                        class="text-gray-500">(24)</span></span>
+                                <p class="text-lg font-bold text-primary">$1299.99</p>
+                            </div>
+                            <button
+                                class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main hover:cursor-pointer">
+                                <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                            </button>
+                        </a>
+                        <!-- Card-1 -->
+                        <a href="#" id="card-1"
+                            class="card group relative flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    
+                            <!-- Image Section -->
+                            <div class="card-img overflow-hidden">
+                                <img src="./assets/products/elliptical-machine.webp" alt="Elliptical Machine"
+                                    class="w-full h-56 object-contain transition-transform duration-500 group-hover:scale-110" />
+                            </div>
+    
+                            <!-- Card Content -->
+                            <div class="card-content flex flex-col gap-2 p-4 text-gray-800">
+                                <h3 class="text-lg font-semibold text-gray-900">Elliptical Machine</h3>
+                                <p class="text-sm text-gray-600">Front-drive elliptical with adjustable stride and incline
+                                </p>
+                                <span class="text-sm font-medium text-yellow-500">⭐ 4.7 <span
+                                        class="text-gray-500">(24)</span></span>
+                                <p class="text-lg font-bold text-primary">$1299.99</p>
+                            </div>
+                            <button
+                                class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main hover:cursor-pointer">
+                                <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+     <!-- Footer -->
+    <footer id="main-footer" class="bg-primary text-dark-main p-8">
+        <div class="container flex flex-col md:flex-row items-center justify-between space-y-8">
+            <div id="footer-logo">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
+                        loading="lazy">
+                </a>
+            </div>
+            <!-- Nav Links -->
+            <ul class="grid grid-cols-2 gap-y-2 border-l-4 border-dark-main px-4 text-lg">
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="index.html">Home</a>
+                </li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition"
+                        href="#product-body">Products</a></li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="about.html">About Us</a>
+                </li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="contact.html">Contact
+                        Us</a></li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="reviews.html">User
+                        Reviews</a></li>
+            </ul>
+            <!-- Social Links -->
+            <div id="socials" class="flex gap-x-1.5">
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
