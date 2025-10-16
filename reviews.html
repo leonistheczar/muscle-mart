@@ -2,118 +2,84 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./src/css/main.css">
-    <title>User Reviews | Muscle Mart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./src/css/main.css">
+  <title>User Reviews | Muscle Mart</title>
 </head>
 
 <body id="review-body" class="oswald bg-background text-main">
-    <!-- Header -->
-    <header id="main-header"
-        class="bg-[#063d58] text-[var(--color-dark-main)] border-b-4 border-accent flex justify-between items-center px-6 py-4 shadow-md">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center">
-            <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
-                loading="lazy">
-        </a>
+  <!-- Header -->
+  <header id="main-header"
+    class="bg-[#063d58] text-[var(--color-dark-main)] border-b-4 border-accent flex justify-between items-center px-6 py-4 shadow-md">
+    <a href="index.html" class="flex items-center">
+      <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36" loading="lazy">
+    </a>
 
-        <!-- Nav -->
-        <nav id="main-nav" class="hidden md:block font-semibold uppercase">
-            <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
-                <li class="overflow-hidden group">
-                    <a href="index.html" class="hover:text-[var(--color-accent)] transition">Home</a>
-                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
-                </li>
-                <li class="overflow-hidden group">
-                    <a href="products.html" class="hover:text-[var(--color-accent)] transition">Products</a>
-                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
-                </li>
-                <li class="overflow-hidden group">
-                    <a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a>
-                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
-                </li>
-                <li class="overflow-hidden group">
-                    <a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a>
-                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
-                </li>
-                <li class="overflow-hidden group">
-                    <a href="reviews.html" class="hover:text-[var(--color-accent)] transition">Reviews</a>
-                    <div id="under-ray" class="h-0.5 w-full bg-accent"></div>
-                </li>
-            </ul>
-        </nav>
-        <!-- Mobile Menu Button (for small screens) -->
-        <button id="menu-toggle" class="md:hidden text-[var(--color-dark-main)] focus:outline-none">
-            <!-- You can use an icon like lucide or font-awesome here -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-    </header>
-    <!-- Main  -->
-    <main id="reviews-main">
-        <section id="user-reviews" class="p-8 flex flex-col justify-center">
-            <div class="container w-full h-[80dvh] bg-secondary">
-                <div id="pick-heading" class="flex justify-center text-center my-6">
-                    <h1 class="text-3xl md:text-4xl font-bold relative text-[#f0f0f0]">
-                        User <span class="">Reviews</span>
-                        <div id="under-ray" class="h-0.5 w-full bg-secondary mt-2"></div>
-                    </h1>
-                </div>
-                <div id="carousels-group" class="">
-                    <div id="carousels-card">
-                        <div class="carousel" id="carousel-1">1</div>
-                        <div class="carousel" id="carousel-2">2</div>
-                        <div class="carousel" id="carousel-3">3</div>
-                        <div class="carousel" id="carousel-4">4</div>
-                        <div class="carousel" id="carousel-5">5</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer id="main-footer" class="bg-primary text-dark-main p-8">
-        <div class="container flex flex-col md:flex-row items-center justify-between space-y-8">
-            <div id="footer-logo">
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center">
-                    <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
-                        loading="lazy">
-                </a>
-            </div>
-            <!-- Nav Links -->
-            <ul class="grid grid-cols-2 gap-y-2 border-l-4 border-dark-main px-4 text-lg">
-                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="index.html">Home</a>
-                </li>
-                <li class="group"><a class="hover:text-[var(--color-accent)] transition"
-                        href="products.html">Products</a></li>
-                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="#about-body">About Us</a>
-                </li>
-                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="contact.html">Contact
-                        Us</a></li>
-                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="reviews.html">User
-                        Reviews</a></li>
-            </ul>
-            <!-- Social Links -->
-            <div id="socials" class="flex gap-x-1.5">
-                <a href="#"
-                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
-                        class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"
-                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
-                        class="fa-brands fa-twitter"></i></a>
-                <a href="#"
-                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="#"
-                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-            </div>
+    <nav id="main-nav" class="hidden md:block font-semibold uppercase">
+      <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
+        <li class="overflow-hidden group"><a href="index.html" class="hover:text-[var(--color-accent)] transition">Home</a>
+            <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+        </li>
+        <li class="overflow-hidden group"><a href="products.html" class="hover:text-[var(--color-accent)] transition">Products</a>
+            <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+        </li>
+        <li class="overflow-hidden group"><a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a>
+            <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+        </li>
+        <li class="overflow-hidden group"><a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a>
+            <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+        </li>
+        <li class="overflow-hidden group"><a href="reviews.html" class="hover:text-[var(--color-accent)] font-bold">Reviews</a>
+            <div id="under-ray" class="h-0.5 w-full bg-accent transition-all"></div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="reviews-main">
+    <section id="user-reviews" class="p-8 flex flex-col justify-center">
+      <div class="container">
+        <div class="text-center my-6">
+          <h1 class="text-3xl md:text-4xl font-bold relative">
+            User <span class="text-secondary">Reviews</span>
+            <div class="h-0.5 w-32 mx-auto bg-secondary mt-2"></div>
+          </h1>
         </div>
-    </footer>
+
+        <!-- Reviews -->
+        <div id="reviews-container"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-start">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-primary text-dark-main p-8">
+    <div class="container flex flex-col md:flex-row items-center justify-between space-y-8">
+      <a href="index.html"><img src="./assets/logos/main-logo-removebg-preview.png" class="w-36 md:w-36"></a>
+
+      <ul class="grid grid-cols-2 gap-y-2 border-l-4 border-dark-main px-4 text-lg">
+        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+        <li><a href="products.html" class="hover:text-accent transition">Products</a></li>
+        <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-accent transition">Contact Us</a></li>
+        <li><a href="reviews.html" class="hover:text-accent transition">User Reviews</a></li>
+      </ul>
+
+      <div id="socials" class="flex gap-2">
+        <a href="#" class="text-2xl border-2 rounded-full p-1 hover:text-accent transition"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="text-2xl border-2 rounded-full p-1 hover:text-accent transition"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="text-2xl border-2 rounded-full p-1 hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-2xl border-2 rounded-full p-1 hover:text-accent transition"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script type="module" src="./src/js/app.js"></script>
 </body>
 </html>

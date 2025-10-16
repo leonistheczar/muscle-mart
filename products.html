@@ -65,94 +65,81 @@
             </div>
             <div id="categories-layout" class="grid grid-cols-1 md:grid-cols-3 gap-2">
                 <!-- Filter Section -->
-                <div id="filter" class="col-span-1 bg-neutral-100 shadow-md rounded-xl px-3 md:py-6">
+                <div id="filter" class="col-span-1 bg-neutral-100 h-fit shadow-md rounded-xl px-3 md:py-6">
                     <div id="filter-heading" class="flex justify-between items-center px-4 py-2 sm:p-3">
-                        <h2 id="" class="text-xl font-semibold text-gray-800">Filter Products</h2>
-                        <a href="#" class="md:hidden inline-block transition-all hover:text-accent"><i
+                        <h2 id="" class="text-xl font-semibold text-gray-800">Filter Products <span class="hidden md:block text-[14px] text-gray-500">(based on category)</span></h2>
+                        <a id="filter-toggle" class="md:hidden inline-block transition-all hover:text-accent"><i
                                 class="fa-solid fa-plus"></i></a>
                     </div>
-                    <ul id="categories" class="hidden w-full sm:block space-y-3">
+                    <ul id="categories" class="hidden opacity-0 sm:opacity-100 transition-all w-full sm:block space-y-3">
                         <!-- Category Item -->
                         <li class="flex items-center gap-2">
-                            <input type="checkbox" name="activewear" id="activewear"
-                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
                             <label for="activewear"
                                 class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
-                                Activewear
-                            </label>
+                                <input type="checkbox" name="category" id="activewear"
+                                class="custom-checkbox mr-1 w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">Activewear</label>
                         </li>
 
-                        <li class="flex items-center gap-2">
-                            <input type="checkbox" name="accessories" id="accessories"
-                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                       <li class="flex items-center gap-2">
                             <label for="accessories"
                                 class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
-                                Accessories
-                            </label>
+                                <input type="checkbox" name="category" id="accessories"
+                                class="custom-checkbox mr-1 w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">Accessories</label>
                         </li>
 
-                        <li class="flex items-center gap-2">
-                            <input type="checkbox" name="benches_racks" id="benches_racks"
-                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
-                            <label for="benches_racks"
+                       <li class="flex items-center gap-2">
+                            <label for="bench-racks"
                                 class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
-                                Benches & Racks
-                            </label>
+                                <input type="checkbox" name="category" id="bench-racks"
+                                class="custom-checkbox mr-1 w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">Benches & Racks</label>
                         </li>
 
                         <li class="flex items-center gap-2">
-                            <input type="checkbox" name="boxing_equipment" id="boxing_equipment"
-                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
-                            <label for="boxing_equipment"
+                            <label for="boxing-equipment"
                                 class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
-                                Boxing Equipment
-                            </label>
+                                <input type="checkbox" name="category" id="boxing-equipment"
+                                class="custom-checkbox mr-1 w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">Boxing Equipment</label>
                         </li>
 
                         <li class="flex items-center gap-2">
-                            <input type="checkbox" name="cardio_equipment" id="cardio_equipment"
-                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
-                            <label for="cardio_equipment"
+                            <label for="cardio-equipment"
                                 class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
-                                Cardio Equipment
-                            </label>
+                                <input type="checkbox" name="category" id="cardio-equipment"
+                                class="custom-checkbox mr-1 w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">Cardio Equipment</label>
                         </li>
 
                         <li class="flex items-center gap-2">
-                            <input type="checkbox" name="functional_training" id="functional_training"
-                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
-                            <label for="functional_training"
+                            <label for="functional-training"
                                 class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
-                                Functional Training
-                            </label>
+                                <input type="checkbox" name="category" id="functional-training"
+                                class="custom-checkbox mr-1 w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">Functional Training</label>
                         </li>
 
                         <li class="flex items-center gap-2">
-                            <input type="checkbox" name="free_weights" id="free_weights"
-                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
-                            <label for="free_weights"
+                            <label for="free-weights"
                                 class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
-                                Free Weights
-                            </label>
+                                <input type="checkbox" name="category" id="free-weights"
+                                class="custom-checkbox mr-1 w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">Free Weights</label>
                         </li>
 
-                        <li class="flex items-center gap-2">
-                            <input type="checkbox" name="recovery" id="recovery"
-                                class="custom-checkbox w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">
+                       <li class="flex items-center gap-2">
                             <label for="recovery"
                                 class="text-gray-700 cursor-pointer select-none transition-colors duration-300 hover:text-blue-600">
-                                Recovery
-                            </label>
+                                <input type="checkbox" name="category" id="recovery"
+                                class="custom-checkbox mr-1 w-4 h-4 accent-secondary  transition-all duration-300 ease-in-out transform hover:scale-110 focus:ring-2 focus:ring-blue-300">Recovery</label>
                         </li>
                         <li><button id="reset-filter"
-                                class="mt-3 cursor-pointer bg-primary px-4 py-2 rounded-lg text-dark-main transition-all hover:bg-accent hover:text-main active:-translate-0.5">Reset</button>
-                        </li>
+                                class="mt-3 cursor-pointer bg-dark-main py-2 px-4 rounded-lg border-2 border-white hover:bg-white hover:text-black transition-all duration-300 active:-translate-0.5">Reset
+                        </button>
+                        <button id="apply-filter"
+                                class="mt-3 cursor-pointer bg-primary px-4 py-2 rounded-lg text-dark-main transition-all hover:bg-accent hover:text-main active:-translate-0.5">Apply
+                        </button></li>
                     </ul>
                 </div>
                 <!-- All products -->
                 <div class="container col-span-2">
                     <div id="product-cards"
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-6">
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 p-6">
                     </div>
                 </div>
         </section>
