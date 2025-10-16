@@ -14,7 +14,7 @@
       "stock_quantity": 45,
       "rating": 4.7,
       "reviews_count": 328,
-      "image_url": "./assets/products/adjustable-dumbbell-set.webp",
+      "image_url": "./assets/products/adjustable-dumbell-set.webp",
       "tags": ["strength training", "home gym", "adjustable"]
     },
     {
@@ -48,7 +48,7 @@
       "stock_quantity": 18,
       "rating": 4.9,
       "reviews_count": 203,
-      "image_url": "./assets/products/adjustable-dumebell-plates.webp",
+      "image_url": "./assets/products/adjustable-dumbell-plates.webp",
       "tags": ["olympic lifting", "crossfit", "professional"]
     },
     {
@@ -255,7 +255,7 @@
       "stock_quantity": 34,
       "rating": 4.8,
       "reviews_count": 178,
-      "image_url": "./assets/prodcuts/battle-ropes.jpg",
+      "image_url": "./assets/products/battle-ropes.jpg",
       "tags": ["hiit", "conditioning", "full body"]
     },
     {
@@ -396,7 +396,7 @@
       "stock_quantity": 112,
       "rating": 4.7,
       "reviews_count": 523,
-      "image_url": "./assets/products/weight-lifting-belt.jpg",
+      "image_url": "./assets/products/weight-lifting-belt.png",
       "tags": ["powerlifting", "support", "professional"]
     },
     {
@@ -555,7 +555,7 @@
       "stock_quantity": 98,
       "rating": 4.8,
       "reviews_count": 567,
-      "image_url": "./assets/products/boxing-gloves.jpg",
+      "image_url": "./assets/products/boxing_gloves.jpg",
       "tags": ["boxing", "training", "protection"]
     },
     {
@@ -577,23 +577,6 @@
     },
     {
       "id": 34,
-      "name": "Gray Tracksuit",
-      "category": "Activewear",
-      "price": 89.99,
-      "currency": "USD",
-      "brand": "StrikePro",
-      "description": "Training Tracksuit with moisture-wicking fabric",
-      "sizes": "S, M, L",
-      "material": "Premium cotton, foam padding",
-      "in_stock": true,
-      "stock_quantity": 98,
-      "rating": 4.8,
-      "reviews_count": 31,
-      "image_url": "./assets/activewear/gray-track-suit.jpg",
-      "tags": ["track-suit", "comfortable", "trendy"]
-    },
-    {
-      "id": 35,
       "name": "Green Shorts",
       "category": "Activewear",
       "price": 24.99,
@@ -610,7 +593,7 @@
       "tags": ["shorts", "comfortable", "trendy"]
     },
     {
-      "id": 36,
+      "id": 35,
       "name": "Track Suit with Hoodie",
       "category": "Activewear",
       "price": 99.99,
@@ -627,7 +610,7 @@
       "tags": ["tracksuit","hoodie", "comfortable", "trendy"]
     },
     {
-      "id": 37,
+      "id": 36,
       "name": "Workout Trousers",
       "category": "Activewear",
       "price": 49.99,
