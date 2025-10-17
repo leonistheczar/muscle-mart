@@ -5,39 +5,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./assets/logos/main-logo.png">
   <link rel="stylesheet" href="./src/css/main.css">
   <title>User Reviews | Muscle Mart</title>
 </head>
 
-<body id="review-body" class="oswald bg-background text-main">
-  <!-- Header -->
-  <header id="main-header"
-    class="bg-[#063d58] text-[var(--color-dark-main)] border-b-4 border-accent flex justify-between items-center px-6 py-4 shadow-md">
-    <a href="index.html" class="flex items-center">
-      <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36" loading="lazy">
-    </a>
+<body id="index-body" class="body-tag oswald relative bg-background text-main">
+    <!-- Header -->
+    <header id="main-header"
+        class="bg-[#063d58] text-[var(--color-dark-main)] flex justify-center md:justify-between items-center px-6 py-4 shadow-md">
+        <!-- Hamburger Icon -->
+        <a href="#" id="side-menu-icon" class="md:hidden absolute text-2xl top-8 left-4 z-50">
+            <i class="fa-solid fa-bars"></i>
+        </a>
 
-    <nav id="main-nav" class="hidden md:block font-semibold uppercase">
-      <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
-        <li class="overflow-hidden group"><a href="index.html" class="hover:text-[var(--color-accent)] transition">Home</a>
-            <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
-        </li>
-        <li class="overflow-hidden group"><a href="products.html" class="hover:text-[var(--color-accent)] transition">Products</a>
-            <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
-        </li>
-        <li class="overflow-hidden group"><a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a>
-            <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
-        </li>
-        <li class="overflow-hidden group"><a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a>
-            <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
-        </li>
-        <li class="overflow-hidden group"><a href="reviews.html" class="hover:text-[var(--color-accent)] font-bold">Reviews</a>
-            <div id="under-ray" class="h-0.5 w-full bg-accent transition-all"></div>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        <!-- Overlay -->
+        <div id="side-menu-overlay"
+            class="hidden md:hidden fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+        </div>
 
+        <!-- Side Menu -->
+        <div id="side-menu"
+            class="bg-secondary fixed top-0 left-0 w-2/3 h-[calc(100%)] -translate-x-full transition-transform duration-300 z-50 md:hidden">
+            <nav id="main-nav" class="font-semibold uppercase relative">
+                <ul class="flex flex-col justify-between p-3 gap-8 font-medium tracking-wide">
+                    <li id="side-menu-close" class="absolute top-2 right-2 text-2xl">
+                        <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                    </li>
+                    <li class="mt-8"><a href="index.html" class="hover:text-accent transition">Home</a></li>
+                    <li><a href="products.html" class="hover:text-accent transition">Products</a></li>
+                    <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
+                    <li><a href="reviews.html" class="hover:text-accent transition">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center md:justify-start justify-center">
+            <img src="./assets/logos/main-logo.png" alt="Main Logo" class="w-36 md:w-36"
+                loading="lazy">
+        </a>
+        <!-- Nav -->
+        <nav id="main-nav" class="hidden md:block font-semibold uppercase">
+            <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
+                <li class="overflow-hidden group">
+                    <a href="index.html" class="hover:text-[var(--color-accent)] transition">Home</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                  </li>
+                  <li class="overflow-hidden group">
+                    <a href="products.html" class="hover:text-[var(--color-accent)] transition">Products</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                  </li>
+                  <li class="overflow-hidden group">
+                    <a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                  </li>
+                  <li class="overflow-hidden group">
+                    <a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                  </li>
+                  <li class="overflow-hidden group">
+                    <a href="reviews.html" class="hover:text-[var(--color-accent)] transition">Reviews</a>
+                    <div id="under-ray" class="h-0.5 w-full bg-accent"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
   <!-- Main -->
   <main id="reviews-main">
     <section id="user-reviews" class="p-8 flex flex-col justify-center">
@@ -60,9 +94,9 @@
   <!-- Footer -->
   <footer id="main-footer" class="bg-primary text-dark-main p-8">
     <div class="container flex flex-col md:flex-row items-center justify-between space-y-8">
-      <a href="index.html"><img src="./assets/logos/main-logo-removebg-preview.png" class="w-36 md:w-36"></a>
+      <a href="index.html"><img src="./assets/logos/main-logo.png" class="w-36 md:w-36"></a>
 
-      <ul class="grid grid-cols-2 gap-y-2 border-l-4 border-dark-main px-4 text-lg">
+      <ul class="grid grid-cols-2 gap-y-2 py-4 border-t-4 md:border-t-0 md:border-l-4 md:py-0 border-dark-main px-4 text-lg">
         <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
         <li><a href="products.html" class="hover:text-accent transition">Products</a></li>
         <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>

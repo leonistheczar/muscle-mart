@@ -1,20 +1,24 @@
-import { apiData, popularData, activewearData, reviewsData } from "./api.js";
+// API
+import { apiData, popularData, activewearData, reviewsData } from './api.js';
+// UI
+import { UI } from "./ui.js";
+const uiSelectors = UI().uiSelectors();
 // Event Listeners
+const sideMenuIcon = uiSelectors.sideMenuIcon
+const sideMenuClose = uiSelectors.sideMenuClose
+const sideMenu = uiSelectors.sideMenu
+const sideMenuOverlay = uiSelectors.sideMenuOverlay
+sideMenuIcon.addEventListener('click', openSideMenu);
+sideMenuClose.addEventListener('click', closeSideMenu);
 if (window.location.href.includes("index.html")) {
   document.addEventListener("DOMContentLoaded", displayPopularProducts);
   document.addEventListener("DOMContentLoaded", displayActiveWearProducts);
 }
 if (window.location.href.includes("products.html")) {
   document.addEventListener("DOMContentLoaded", displayProducts);
-  document
-    .querySelector("#apply-filter")
-    .addEventListener("click", filterProducts);
-  document
-    .querySelector("#reset-filter")
-    .addEventListener("click", resetFilters);
-  document
-    .getElementById("filter-toggle")
-    .addEventListener("click", toggleFilter);
+  uiSelectors.applyFilter.addEventListener("click", filterProducts);
+  uiSelectors.resetFilter.addEventListener("click", resetFilters);
+  uiSelectors.plusIcon.addEventListener("click", toggleFilter);
 }
 if (window.location.href.includes("reviews.html")) {
   document.addEventListener("DOMContentLoaded", displayReviews);
@@ -57,235 +61,66 @@ async function getReviews() {
 }
 // Display Products
 function displayProducts() {
-  const productContainer = document.getElementById("product-cards");
-  let productData = getAPIData().then((data) => {
+  const productContainer = uiSelectors.productContainer;
+  getAPIData().then((data) => {
     let products = data.products;
     products.forEach((product) => {
-      productContainer.innerHTML += `      
-            <!-- Product Card -->
-      <a href="#"
-        id="card-${product.id}"
-        class="group relative flex flex-col justify-between bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-accent">
-
-        <!-- Image -->
-        <div class="h-64 flex items-center justify-center bg-gray-50 overflow-hidden">
-            <img src="${product.image_url}" 
-                  alt="${product.name}" 
-                  loading="lazy"
-                  class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
-        </div>
-
-        <!-- Content -->
-        <div class="p-4 flex flex-col space-y-2 text-main flex-grow">
-            <h3 class="text-lg font-semibold ">${product.name}</h3>
-            <p class="text-sm text-gray-500 font-medium">${product.category}</p>
-            <p class="text-sm text-gray-600 line-clamp-2">${product.description}</p>
-
-            <div class="flex items-center gap-1 text-sm text-accent">
-                <i class="fa-solid fa-star"></i>
-                <span class="font-medium">${product.rating}</span>
-                <span class="text-gray-500">(${product.reviews_count})</span>
-            </div>
-
-            <p class="text-lg font-bold text-primary mt-auto">$${product.price}</p>
-        </div>
-
-        <!-- Add to Cart Button -->
-        <button
-            class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main">
-            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
-        </button>
-      </a>
-    `;
+      productContainer.innerHTML += UI().uiCard(product);
     });
   });
 }
 
 // Display Popular Products
 function displayPopularProducts() {
-  const popularContainer = document.getElementById("popular-cards");
-  let popularData = getPopularData().then((data) => {
+  const popularContainer = uiSelectors.popularContainer;
+  getPopularData().then((data) => {
     let products = data.popular;
     products.forEach((product) => {
-      popularContainer.innerHTML += `      
-            <!-- Product Card -->
-      <a href="#"
-        id="card-${product.id}"
-        class="group relative flex flex-col justify-between bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-accent">
-
-        <!-- Image -->
-        <div class="h-64 flex items-center justify-center bg-gray-50 overflow-hidden">
-            <img src="${product.image_url}" 
-                  alt="${product.name}" 
-                  loading="lazy"
-                  class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
-        </div>
-
-        <!-- Content -->
-        <div class="p-4 flex flex-col space-y-2 text-main flex-grow">
-            <h3 class="text-lg font-semibold ">${product.name}</h3>
-            <p class="text-sm text-gray-500 font-medium">${product.category}</p>
-            <p class="text-sm text-gray-600 line-clamp-2">${product.description}</p>
-
-            <div class="flex items-center gap-1 text-sm text-accent">
-                <i class="fa-solid fa-star"></i>
-                <span class="font-medium">${product.rating}</span>
-                <span class="text-gray-500">(${product.reviews_count})</span>
-            </div>
-
-            <p class="text-lg font-bold text-primary mt-auto">$${product.price}</p>
-        </div>
-
-        <!-- Add to Cart Button -->
-        <button
-            class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main">
-            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
-        </button>
-      </a>
-    `;
+      popularContainer.innerHTML += UI().uiCard(product);
     });
   });
 }
-// Display Popular Products
+// Display Activewear Products
 function displayActiveWearProducts() {
-  const activeWearContainer = document.getElementById("activewear-cards");
-  let popularData = getActiveWearData().then((data) => {
+  const activeWearContainer = uiSelectors.activeWearContainer;
+  getActiveWearData().then((data) => {
     let products = data.activewear;
     products.forEach((product) => {
-      activeWearContainer.innerHTML += `      
-            <!-- Product Card -->
-      <a href="#"
-        id="card-${product.id}"
-        class="group relative flex flex-col justify-between bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-accent">
-
-        <!-- Image -->
-        <div class="h-64 flex items-center justify-center bg-gray-50 overflow-hidden">
-            <img src="${product.image_url}" 
-                  alt="${product.name}" 
-                  loading="lazy"
-                  class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
-        </div>
-
-        <!-- Content -->
-        <div class="p-4 flex flex-col space-y-2 text-main flex-grow">
-            <h3 class="text-lg font-semibold ">${product.name}</h3>
-            <p class="text-sm text-gray-500 font-medium">${product.category}</p>
-            <p class="text-sm text-gray-600 line-clamp-2">${product.description}</p>
-
-            <div class="flex items-center gap-1 text-sm text-accent">
-                <i class="fa-solid fa-star"></i>
-                <span class="font-medium">${product.rating}</span>
-                <span class="text-gray-500">(${product.reviews_count})</span>
-            </div>
-
-            <p class="text-lg font-bold text-primary mt-auto">$${product.price}</p>
-        </div>
-
-        <!-- Add to Cart Button -->
-        <button
-            class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main">
-            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
-        </button>
-      </a>
-    `;
+      activeWearContainer.innerHTML += UI().uiCard(product);
     });
   });
 }
 
 // Display User Reviews
 function displayReviews() {
-  const reviewsContainer = document.getElementById("reviews-container");
-  console.log("Working")
-  let reviewsData = getReviews().then((data) => {
+  const reviewsContainer = uiSelectors.reviewsContainer;
+  // API Review fetching...
+  getReviews().then((data) => {
     let reviews = data.reviews;
     console.log(reviews);
     reviews.forEach((review) => {
-      reviewsContainer.innerHTML += `<div class="max-w-md bg-white rounded-2xl shadow-md p-6 border border-gray-200 hover:border-accent hover:shadow-lg transition-all duration-300">
-      <!-- Product Info -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <h2 class="text-lg font-semibold text-gray-900">${review.productName}</h2>
-          <p class="text-sm text-gray-500">Category: <span class="font-medium text-gray-700">${review.productCategory}</span></p>
-        </div>
-        <p class="text-xs bg-blue-100 text-blue-700 p-1.5 rounded-md font-semibold md:px-2 md:py-1 md:rounded-full">Verified Purchase</p>
-      </div>
-
-      <!-- User Info -->
-      <div class="flex items-center space-x-3 mb-3">
-        <img src="${review.image_url}" alt="User" class="w-16 h-16 rounded-full border">
-        <h3 class="text-gray-800 font-semibold">${review.userName}</h3>
-      </div>
-
-      <!-- Rating -->
-      <div class="flex items-center">
-        <div id="stars" class="">${review.stars}</div>
-        <span class="ml-2 mt-1 text-sm text-gray-700 font-semibold">${review.rating} / 5</span>
-      </div>
-
-      <!-- Title -->
-      <h4 class="text-md font-semibold text-gray-900 mt-2">${review.title}</h4>
-
-      <!-- Comment -->
-      <p class="mt-2 text-gray-700 leading-relaxed">${review.comment}</p>
-    </div>
-    `;
+      reviewsContainer.innerHTML += UI().reviewUICard(review);
     });
   });
 }
 
 // Products based on filters
 function filterProducts() {
-  let categories = Array.from(
-    document.querySelectorAll('input[name="category"]:checked')
-  );
+  let categories = Array.from(uiSelectors.categoriesFilter);
   categories = categories.map((el) => el.parentElement.textContent.trim());
   if (categories.length === 0) {
     return displayProducts();
   } else {
-    const productContainer = document.getElementById("product-cards");
+    const productContainer = uiSelectors.productContainer;
     productContainer.innerHTML = "";
-    let productData = getAPIData().then((data) => {
+    // Fetch all products from APi
+    getAPIData().then((data) => {
       let products = data.products;
       products = products.filter((product) =>
         categories.includes(product.category)
       );
       products.forEach((product) => {
-        productContainer.innerHTML += `      
-                      <!-- Product Card -->
-      <a href="#"
-        id="card-${product.id}"
-        class="group relative flex flex-col justify-between bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-accent">
-
-        <!-- Image -->
-        <div class="h-64 flex items-center justify-center bg-gray-50 overflow-hidden">
-            <img src="${product.image_url}" 
-                  alt="${product.name}" 
-                  loading="lazy"
-                  class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
-        </div>
-
-        <!-- Content -->
-        <div class="p-4 flex flex-col space-y-2 text-main flex-grow">
-            <h3 class="text-lg font-semibold ">${product.name}</h3>
-            <p class="text-sm text-gray-500 font-medium">${product.category}</p>
-            <p class="text-sm text-gray-600 line-clamp-2">${product.description}</p>
-
-            <div class="flex items-center gap-1 text-sm text-accent">
-                <i class="fa-solid fa-star"></i>
-                <span class="font-medium">${product.rating}</span>
-                <span class="text-gray-500">(${product.reviews_count})</span>
-            </div>
-
-            <p class="text-lg font-bold text-primary mt-auto">$${product.price}</p>
-        </div>
-
-        <!-- Add to Cart Button -->
-        <button
-            class="absolute bottom-0 left-0 w-full bg-primary text-white font-medium py-3 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-main">
-            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
-        </button>
-      </a>
-      `;
+        productContainer.innerHTML += UI().uiCard(product);
       });
     });
   }
@@ -301,8 +136,8 @@ function resetFilters() {
 }
 // Drpdown filter toggle on smaller screens
 function toggleFilter() {
-  const categories = document.getElementById("categories");
-  const toggleIcon = document.getElementById("filter-toggle");
+  const categories = uiSelectors.categoriesProducts;
+  const toggleIcon = uiSelectors.plusIcon;
 
   if (categories.classList.contains("hidden")) {
     toggleIcon.style.transform = "rotate(45deg)";
@@ -319,4 +154,27 @@ function toggleFilter() {
     categories.style.height = fullHeight;
     window.scrollTo({ top: categories.offsetTop, behavior: "smooth" });
   }
+}
+
+// Open side menu
+function openSideMenu(e) {
+  e.preventDefault();
+  const bodyTag = uiSelectors.body;
+  sideMenu.classList.remove('-translate-x-full');
+  sideMenuOverlay.classList.remove('hidden');
+  document.body.classList.add('overflow-y-hidden')
+  // Fade in 
+  setTimeout(() => {
+    sideMenuOverlay.classList.remove('opacity-0', 'pointer-events-none');
+  }, 10);
+}
+
+// Close side menu
+function closeSideMenu() {
+  sideMenu.classList.add('-translate-x-full');
+  sideMenuOverlay.classList.add('opacity-0', 'pointer-events-none');
+  document.body.classList.remove('overflow-y-hidden')
+  setTimeout(() => {
+    sideMenuOverlay.classList.add('hidden');
+  }, 300);
 }

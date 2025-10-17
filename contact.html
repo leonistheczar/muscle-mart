@@ -5,20 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/logos/main-logo.png">
     <link rel="stylesheet" href="./src/css/main.css">
     <title>Contact Us | Muscle Mart</title>
 </head>
-
-<body id="about-body" class="oswald bg-background text-main">
+<body id="contact-body" class="body-tag oswald relative bg-background text-main">
     <!-- Header -->
     <header id="main-header"
-        class="bg-[#063d58] text-[var(--color-dark-main)] border-b-4 border-accent flex justify-between items-center px-6 py-4 shadow-md">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center">
-            <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
-                loading="lazy">
+        class="bg-[#063d58] text-[var(--color-dark-main)] flex justify-center md:justify-between items-center px-6 py-4 shadow-md">
+        <a href="#" id="side-menu-icon" class="md:hidden absolute text-2xl top-8 left-4 z-50">
+            <i class="fa-solid fa-bars"></i>
         </a>
 
+        <!-- Overlay -->
+        <div id="side-menu-overlay"
+            class="hidden md:hidden fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+        </div>
+
+        <!-- Side Menu -->
+        <div id="side-menu"
+            class="bg-secondary fixed top-0 left-0 w-2/3 h-[calc(100%)] -translate-x-full transition-transform duration-300 z-50 md:hidden">
+            <nav id="main-nav" class="font-semibold uppercase relative">
+                <ul class="flex flex-col justify-between p-3 gap-8 font-medium tracking-wide">
+                    <li id="side-menu-close" class="absolute top-2 right-2 text-2xl">
+                        <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                    </li>
+                    <li class="mt-8"><a href="index.html" class="hover:text-accent transition">Home</a></li>
+                    <li><a href="products.html" class="hover:text-accent transition">Products</a></li>
+                    <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
+                    <li><a href="reviews.html" class="hover:text-accent transition">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center md:justify-start justify-center">
+            <img src="./assets/logos/main-logo.png" alt="Main Logo" class="w-36 md:w-36"
+                loading="lazy">
+        </a>
         <!-- Nav -->
         <nav id="main-nav" class="hidden md:block font-semibold uppercase">
             <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
@@ -44,14 +69,6 @@
                 </li>
             </ul>
         </nav>
-        <!-- Mobile Menu Button (for small screens) -->
-        <button id="menu-toggle" class="md:hidden text-[var(--color-dark-main)] focus:outline-none">
-            <!-- You can use an icon like lucide or font-awesome here -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
     </header>
     <main id="contact-main">
         <!-- Contact Section -->
@@ -95,19 +112,19 @@
             <div id="footer-logo">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center">
-                    <img src="./assets/logos/main-logo-removebg-preview.png" alt="Main Logo" class="w-36 md:w-36"
+                    <img src="./assets/logos/main-logo.png" alt="Main Logo" class="w-36 md:w-36"
                         loading="lazy">
                 </a>
             </div>
             <!-- Nav Links -->
-            <ul class="grid grid-cols-2 gap-y-2 border-l-4 border-dark-main px-4 text-lg">
+            <ul class="grid grid-cols-2 gap-y-2 py-4 border-t-4 md:border-t-0 md:border-l-4 md:py-0 border-dark-main px-4 text-lg">
                 <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="index.html">Home</a>
                 </li>
                 <li class="group"><a class="hover:text-[var(--color-accent)] transition"
                         href="products.html">Products</a></li>
-                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="#about-body">About Us</a>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="about.html">About Us</a>
                 </li>
-                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="contact.html">Contact
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="#contact-body">Contact
                         Us</a></li>
                 <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="reviews.html">User
                         Reviews</a></li>
@@ -129,6 +146,8 @@
             </div>
         </div>
     </footer>
+    <!-- JS Script -->
+     <script type="module" src="./src/js/app.js"></script>
 </body>
 
 </html>
