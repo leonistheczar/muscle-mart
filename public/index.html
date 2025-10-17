@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58218da0f5.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/logos/main-logo.png">
+    <title>Muscle Mart | One Stop to Fitness Products</title>
+  <script type="module" crossorigin src="/assets/index-BuDYMP_W.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BJ7NT-Ve.css">
+</head>
+
+<body id="index-body" class="body-tag oswald relative bg-background text-main">
+    <!-- Header -->
+    <header id="main-header"
+        class="bg-[#063d58] text-[var(--color-dark-main)] flex justify-center md:justify-between items-center px-6 py-4 shadow-md">
+        <!-- Hamburger Icon -->
+        <a href="#" id="side-menu-icon" class="md:hidden absolute text-2xl top-8 left-4 z-50">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <!-- Overlay -->
+        <div id="side-menu-overlay"
+            class="hidden md:hidden fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+        </div>
+
+        <!-- Side Menu -->
+        <div id="side-menu"
+            class="bg-secondary fixed top-0 left-0 w-2/3 h-[calc(100%)] -translate-x-full transition-transform duration-300 z-50 md:hidden">
+            <nav id="main-nav" class="font-semibold uppercase relative">
+                <ul class="flex flex-col justify-between p-3 gap-8 font-medium tracking-wide">
+                    <li id="side-menu-close" class="absolute top-2 right-2 text-2xl">
+                        <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                    </li>
+                    <li class="mt-8"><a href="index.html" class="hover:text-accent transition">Home</a></li>
+                    <li><a href="products.html" class="hover:text-accent transition">Products</a></li>
+                    <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
+                    <li><a href="reviews.html" class="hover:text-accent transition">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center md:justify-start justify-center">
+            <img src="/assets/logos/main-logo.png" alt="Main Logo" class="w-36 md:w-36"
+                loading="lazy">
+        </a>
+        <!-- Nav -->
+        <nav id="main-nav" class="hidden md:block font-semibold uppercase">
+            <ul class="flex justify-between items-center gap-8 font-medium tracking-wide">
+                <li class="overflow-hidden group">
+                    <a href="index.html" class="hover:text-[var(--color-accent)] transition">Home</a>
+                    <div id="under-ray" class="h-0.5 w-full bg-accent"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="products.html" class="hover:text-[var(--color-accent)] transition">Products</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="about.html" class="hover:text-[var(--color-accent)] transition">About Us</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="contact.html" class="hover:text-[var(--color-accent)] transition">Contact</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+                <li class="overflow-hidden group">
+                    <a href="reviews.html" class="hover:text-[var(--color-accent)] transition">Reviews</a>
+                    <div id="under-ray" class="h-0.5 w-0 bg-accent transition-all group-hover:w-full"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Banner -->
+        <section id="hero-banner" class="relative w-full h-[calc(100dvh-0.75rem)] text-white overflow-hidden">
+            <!-- Video Background -->
+            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+                <source src="/assets/hero_banner_video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Overlay for better text contrast -->
+            <div class="absolute inset-0 bg-black/70"></div>
+
+            <!-- Content Container -->
+            <div
+                class="relative container mx-auto px-6 h-full flex flex-col items-center justify-center text-center space-y-6 z-10">
+                <h1 class="text-4xl md:text-6xl font-anton font-bold animate-fade-in">
+                    Elevate Your Fitness Journey
+                </h1>
+                <p class="max-w-2xl text-lg md:text-xl text-gray-200">
+                    Discover premium gym gear, workout apparel, and nutrition essentials
+                    designed to help you train smarter and achieve your fitness goals faster.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 mt-4">
+                    <a href="about.html"
+                        class="font-semibold py-3 px-8 rounded-lg border-2 border-white hover:bg-white hover:text-black transition-all duration-300">
+                        About Us
+                    </a>
+                    <a href="products.html"
+                        class="bg-secondary font-semibold text-main py-3 px-8 rounded-lg hover:bg-yellow-400 hover:scale-105 transition-all duration-300 shadow-lg">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Popular Picks -->
+        <section id="popular-picks" class="p-8">
+            <div class="container mx-auto">
+                <div id="pick-heading" class="text-center mb-8">
+                    <h1 class="inline-block text-3xl md:text-4xl font-bold relative">
+                        Popular <span class="text-secondary">Picks</span>
+                        <div id="under-ray" class="h-0.5 w-full bg-secondary mt-2"></div>
+                    </h1>
+                </div>
+                <!-- View All -->
+                <div id="all-products" class="flex justify-center md:justify-end md:mr-8 font-semibold">
+                    <a href="products.html" class="group text-xl text-primary">
+                        View All
+                        <div id="under-ray"
+                            class="hidden md:block h-0.5 w-0 bg-accent transition-all duration-500 group-hover:w-full">
+                        </div>
+                    </a>
+                </div>
+                <!-- Popular Product Cards  -->
+                <div id="popular-cards"
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 justify-center items-center gap-3 p-6">
+
+                </div>
+            </div>
+        </section>
+        <!-- Sale Banner -->
+        <section id="sale-banner" class="p-8 group">
+            <a href="products.html"
+                class="block relative w-full h-[50vh] sm:h-[60vh] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden shadow-lg"
+                style="background-image: url('/assets/sale_banner.jpg'); background-position: 50% 40%;">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/50 transition-all duration-300 group-hover:bg-black/40"></div>
+
+                <!-- Content -->
+                <div class="relative flex flex-col items-end justify-center h-full p-8 text-white text-right space-y-2">
+                    <h2 class="text-xl sm:text-2xl font-bold uppercase tracking-widest italic">
+                        Limited Time Offer!
+                    </h2>
+                    <p class="text-3xl sm:text-4xl font-semibold">
+                        Extra <span class="text-accent italic text-5xl sm:text-6xl font-extrabold">50%</span> Off!
+                    </p>
+                    <span class="inline-block mt-4 bg-accent text-main font-semibold px-6 py-3 rounded-md">
+                        Shop Now
+                    </span>
+                </div>
+            </a>
+        </section>
+        <!-- 🏋️‍♂️ Activewear Picks Section -->
+        <section id="activewear-picks" class="p-8 bg-background">
+            <div class="container mx-auto">
+
+                <!-- Heading -->
+                <div id="activewear-heading" class="text-center mb-6 flex justify-center items-center">
+                    <span
+                        class="sm:w-[32px] sm:h-[32px] md:w-auto md:h-auto md:-translate-y-6 -rotate-[20deg] md:translate-x-2"><img
+                            src="/assets/logos/new-icon.png" alt=""></span>
+                    <h1 class="text-2xl md:text-4xl font-bold relative">Activewear <span
+                            class="text-secondary">Picks</span>
+                        <div class="h-0.5 w-full bg-secondary mt-2"></div>
+                    </h1>
+                </div>
+
+                <!-- View All Link -->
+                <div class="flex justify-center md:justify-end md:mr-6 mb-4 font-semibold">
+                    <a href="products.html" class="group text-lg text-primary">
+                        View All
+                        <div class="h-0.5 w-0 bg-accent transition-all duration-500 group-hover:w-full"></div>
+                    </a>
+                </div>
+
+                <!-- Product Grid -->
+                <div id="activewear-cards"
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4"> </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-primary text-dark-main p-8">
+        <div class="container flex flex-col md:flex-row items-center justify-between space-y-8">
+            <div id="footer-logo">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <img src="/assets/logos/main-logo.png" alt="Main Logo" class="w-36 md:w-36"
+                        loading="lazy">
+                </a>
+            </div>
+            <!-- Nav Links -->
+            <ul class="grid grid-cols-2 gap-y-2 py-4 border-t-4 md:border-t-0 md:border-l-4 md:py-0 border-dark-main px-4 text-lg">
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="index.html">Home</a>
+                </li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition"
+                        href="products.html">Products</a></li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="about.html">About Us</a>
+                </li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="contact.html">Contact
+                        Us</a></li>
+                <li class="group"><a class="hover:text-[var(--color-accent)] transition" href="reviews.html">User
+                        Reviews</a></li>
+            </ul>
+            <!-- Social Links -->
+            <div id="socials" class="flex gap-x-1.5">
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#"
+                    class="text-2xl border-2 rounded-full p-[2px]  hover:text-[var(--color-accent)] transition"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- JS Script -->
+</body>
+
+</html>

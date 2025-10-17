@@ -120,23 +120,31 @@ async function displayReviews() {
 }
 
 // FILTER LOGIC 
-async function filterProducts() {
-  const categories = Array.from(uiSelectors.categoriesFilter).map(el => el.value.toLowerCase());
-  const container = uiSelectors.productContainer;
-  if (!container) return;
-
-  const products = await getAPIData();
-
-  const filtered = categories.length
-    ? products.filter(p => categories.includes(p.category.toLowerCase()))
-    : products;
-
-  container.innerHTML = filtered.map(ui.uiCard).join('');
+function filterProducts() { 
+  const categories = Array.from(uiSelectors.categoriesFilter)
+    .map(el => el.parentElement.textContent.trim());
+  
+  if (categories.length === 0) { 
+    return displayProducts(); 
+  } 
+  
+  const productContainer = uiSelectors.productContainer;
+  if (!productContainer) return;
+  
+  getAPIData().then((data) => { 
+    const products = data.filter(product => 
+      categories.includes(product.category)
+    );
+    
+    productContainer.innerHTML = products.map(product => 
+      UI().uiCard(product)
+    ).join('');
+  });
 }
 
 function resetFilters() {
-  const checkboxes = document.querySelectorAll('input[name="category"]');
-  checkboxes.forEach(el => (el.checked = false));
+  document.querySelectorAll('input[name="category"]')
+    .forEach(el => el.checked = false);
   displayProducts();
 }
 
