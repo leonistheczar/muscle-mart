@@ -1,6 +1,6 @@
-# 🌟 E-Commerce Web Project
+# 🌟 Muscle Mart Web Design
 
-A modern, responsive, and interactive **e-commerce website** built with **HTML, TailwindCSS, and JavaScript (Vite)**. The project showcases dynamic product listings, filtering, user reviews, and a sleek UI with smooth interactions.  
+A modern, responsive, and interactive **Gym / Fitness Products Website** built with **HTML, TailwindCSS, and JavaScript (Vite)**. The project showcases dynamic product listings, filtering, user reviews, and a sleek UI with smooth interactions.  
 
 ---
 
