@@ -14,7 +14,7 @@
       "stock_quantity": 45,
       "rating": 4.7,
       "reviews_count": 328,
-      "image_url": "./assets/products/adjustable-dumbell-set.webp",
+      "image_url": "/assets/products/adjustable-dumbell-set.webp",
       "tags": ["strength training", "home gym", "adjustable"]
     },
     {
@@ -31,7 +31,7 @@
       "stock_quantity": 22,
       "rating": 4.8,
       "reviews_count": 156,
-      "image_url": "./assets/products/olympic-barbell-45lbs.webp",
+      "image_url": "/assets/products/olympic-barbell-45lbs.webp",
       "tags": ["powerlifting", "olympic lifting", "professional"]
     },
     {
@@ -48,7 +48,7 @@
       "stock_quantity": 18,
       "rating": 4.9,
       "reviews_count": 203,
-      "image_url": "./assets/products/adjustable-dumbell-plates.webp",
+      "image_url": "/assets/products/adjustable-dumbell-plates.webp",
       "tags": ["olympic lifting", "crossfit", "professional"]
     },
     {
@@ -65,7 +65,7 @@
       "stock_quantity": 31,
       "rating": 4.6,
       "reviews_count": 189,
-      "image_url": "./assets/products/adjustable-weight-bench.webp",
+      "image_url": "/assets/products/adjustable-weight-bench.webp",
       "tags": ["strength training", "versatile", "home gym"]
     },
     {
@@ -83,7 +83,7 @@
       "stock_quantity": 12,
       "rating": 4.9,
       "reviews_count": 267,
-      "image_url": "./assets/products/power-rack.webp",
+      "image_url": "/assets/products/power-rack.webp",
       "tags": ["home gym", "squat rack", "professional"]
     },
     {
@@ -100,7 +100,7 @@
       "stock_quantity": 56,
       "rating": 4.7,
       "reviews_count": 412,
-      "image_url": "./assets/products/kettleball-set-3.jpg",
+      "image_url": "/assets/products/kettleball-set-3.jpg",
       "tags": ["functional training", "hiit", "strength"]
     },
     {
@@ -117,7 +117,7 @@
       "stock_quantity": 128,
       "rating": 4.5,
       "reviews_count": 891,
-      "image_url": "./assets/products/resistance-band-set.png",
+      "image_url": "/assets/products/resistance-band-set.png",
       "tags": ["portable", "rehabilitation", "strength training"]
     },
     {
@@ -135,7 +135,7 @@
       "stock_quantity": 8,
       "rating": 4.8,
       "reviews_count": 145,
-      "image_url": "./assets/products/treadmill.jpeg",
+      "image_url": "/assets/products/treadmill.jpeg",
       "tags": ["cardio", "running", "commercial grade"]
     },
     {
@@ -153,7 +153,7 @@
       "stock_quantity": 15,
       "rating": 4.9,
       "reviews_count": 298,
-      "image_url": "./assets/products/rowing-machine.jpg",
+      "image_url": "/assets/products/rowing-machine.jpg",
       "tags": ["full body", "cardio", "low impact"]
     },
     {
@@ -171,7 +171,7 @@
       "stock_quantity": 24,
       "rating": 4.7,
       "reviews_count": 367,
-      "image_url": "./assets/products/spin-bike-pro.webp",
+      "image_url": "/assets/products/spin-bike-pro.webp",
       "tags": ["cycling", "cardio", "quiet operation"]
     },
     {
@@ -188,7 +188,7 @@
       "stock_quantity": 203,
       "rating": 4.6,
       "reviews_count": 678,
-      "image_url": "./assets/products/foam-roller-slimpro.jpg",
+      "image_url": "/assets/products/foam-roller-slimpro.jpg",
       "tags": ["recovery", "mobility", "massage"]
     },
     {
@@ -205,7 +205,7 @@
       "stock_quantity": 147,
       "rating": 4.8,
       "reviews_count": 523,
-      "image_url": "./assets/products/yoga-mat.webp",
+      "image_url": "/assets/products/yoga-mat.webp",
       "tags": ["yoga", "pilates", "eco-friendly"]
     },
     {
@@ -222,7 +222,7 @@
       "stock_quantity": 89,
       "rating": 4.7,
       "reviews_count": 234,
-      "image_url": "./assets/products/pull-up-assist-band.jpg",
+      "image_url": "/assets/products/pull-up-assist-band.jpg",
       "tags": ["pull-ups", "assisted training", "mobility"]
     },
     {
@@ -238,7 +238,7 @@
       "stock_quantity": 167,
       "rating": 4.5,
       "reviews_count": 445,
-      "image_url": "./assets/products/ab-roller.avif",
+      "image_url": "/assets/products/ab-roller.avif",
       "tags": ["core training", "abs", "portable"]
     },
     {
@@ -255,7 +255,7 @@
       "stock_quantity": 34,
       "rating": 4.8,
       "reviews_count": 178,
-      "image_url": "./assets/products/battle-ropes.jpg",
+      "image_url": "/assets/products/battle-ropes.jpg",
       "tags": ["hiit", "conditioning", "full body"]
     },
     {
@@ -273,7 +273,7 @@
       "stock_quantity": 41,
       "rating": 4.7,
       "reviews_count": 201,
-      "image_url": "./assets/products/plyo-box.jpg",
+      "image_url": "/assets/products/plyo-box.jpg",
       "tags": ["plyometrics", "jump training", "crossfit"]
     },
     {
@@ -290,7 +290,7 @@
       "stock_quantity": 73,
       "rating": 4.6,
       "reviews_count": 312,
-      "image_url": "./assets/products/medicine-ball-set.jpg",
+      "image_url": "/assets/products/medicine-ball-set.jpg",
       "tags": ["functional training", "core", "throwing"]
     },
     {
@@ -307,7 +307,7 @@
       "stock_quantity": 94,
       "rating": 4.8,
       "reviews_count": 267,
-      "image_url": "./assets/products/slam-ball.jpg",
+      "image_url": "/assets/products/slam-ball.jpg",
       "tags": ["hiit", "power training", "conditioning"]
     },
     {
@@ -324,7 +324,7 @@
       "stock_quantity": 62,
       "rating": 4.7,
       "reviews_count": 389,
-      "image_url": "./assets/products/suspension-trainer.webp",
+      "image_url": "/assets/products/suspension-trainer.webp",
       "tags": ["bodyweight training", "portable", "versatile"]
     },
     {
@@ -342,7 +342,7 @@
       "stock_quantity": 28,
       "rating": 4.8,
       "reviews_count": 156,
-      "image_url": "./assets/products/gym-flooring.png",
+      "image_url": "/assets/products/gym-flooring.png",
       "tags": ["home gym", "flooring", "protective"]
     },
     {
@@ -360,7 +360,7 @@
       "stock_quantity": 37,
       "rating": 4.6,
       "reviews_count": 178,
-      "image_url": "./assets/products/dip-station.jpeg",
+      "image_url": "/assets/products/dip-station.jpeg",
       "tags": ["bodyweight", "upper body", "home gym"]
     },
     {
@@ -378,7 +378,7 @@
       "stock_quantity": 19,
       "rating": 4.9,
       "reviews_count": 143,
-      "image_url": "./assets/products/hex-bar.jpg",
+      "image_url": "/assets/products/hex-bar.jpg",
       "tags": ["deadlifts", "powerlifting", "professional"]
     },
     {
@@ -396,7 +396,7 @@
       "stock_quantity": 112,
       "rating": 4.7,
       "reviews_count": 523,
-      "image_url": "./assets/products/weight-lifting-belt.png",
+      "image_url": "/assets/products/weight-lifting-belt.png",
       "tags": ["powerlifting", "support", "professional"]
     },
     {
@@ -413,7 +413,7 @@
       "stock_quantity": 186,
       "rating": 4.6,
       "reviews_count": 678,
-      "image_url": "./assets/products/lifting-straps.jpg",
+      "image_url": "/assets/products/lifting-straps.jpg",
       "tags": ["grip support", "deadlifts", "pulling exercises"]
     },
     {
@@ -431,7 +431,7 @@
       "stock_quantity": 11,
       "rating": 4.7,
       "reviews_count": 189,
-      "image_url": "./assets/products/elliptical-machine.webp",
+      "image_url": "/assets/products/elliptical-machine.webp",
       "tags": ["cardio", "low impact", "full body"]
     },
     {
@@ -449,7 +449,7 @@
       "stock_quantity": 78,
       "rating": 4.8,
       "reviews_count": 892,
-      "image_url": "./assets/products/massage-gun.png",
+      "image_url": "/assets/products/massage-gun.png",
       "tags": ["recovery", "deep tissue", "portable"]
     },
     {
@@ -466,7 +466,7 @@
       "stock_quantity": 234,
       "rating": 4.5,
       "reviews_count": 456,
-      "image_url": "./assets/products/compression-sleeve-set.webp",
+      "image_url": "/assets/products/compression-sleeve-set.webp",
       "tags": ["recovery", "support", "circulation"]
     },
     {
@@ -484,7 +484,7 @@
       "stock_quantity": 56,
       "rating": 4.6,
       "reviews_count": 267,
-      "image_url": "./assets/products/weighted-vest.webp",
+      "image_url": "/assets/products/weighted-vest.webp",
       "tags": ["resistance training", "calisthenics", "running"]
     },
     {
@@ -502,7 +502,7 @@
       "stock_quantity": 143,
       "rating": 4.7,
       "reviews_count": 389,
-      "image_url": "./assets/products/agility-ladder.jpg",
+      "image_url": "/assets/products/agility-ladder.jpg",
       "tags": ["speed training", "footwork", "agility"]
     },
     {
@@ -519,7 +519,7 @@
       "stock_quantity": 29,
       "rating": 4.8,
       "reviews_count": 134,
-      "image_url": "./assets/products/speed-bag.jpg",
+      "image_url": "/assets/products/speed-bag.jpg",
       "tags": ["boxing", "hand-eye coordination", "cardio"]
     },
     {
@@ -537,7 +537,7 @@
       "stock_quantity": 17,
       "rating": 4.7,
       "reviews_count": 198,
-      "image_url": "./assets/products/heavy-bag.jpg",
+      "image_url": "/assets/products/heavy-bag.jpg",
       "tags": ["boxing", "kickboxing", "power training"]
     },
     {
@@ -555,7 +555,7 @@
       "stock_quantity": 98,
       "rating": 4.8,
       "reviews_count": 567,
-      "image_url": "./assets/products/boxing_gloves.jpg",
+      "image_url": "/assets/products/boxing_gloves.jpg",
       "tags": ["boxing", "training", "protection"]
     },
     {
@@ -572,7 +572,7 @@
       "stock_quantity": 98,
       "rating": 4.7,
       "reviews_count": 24,
-      "image_url": "./assets/activewear/black-tees.jpg",
+      "image_url": "/assets/activewear/black-tees.jpg",
       "tags": ["t-shirt", "activewear", "sweat-wicking"]
     },
     {
@@ -589,7 +589,7 @@
       "stock_quantity": 98,
       "rating": 4.6,
       "reviews_count": 18,
-      "image_url": "./assets/activewear/green-shorts.jpg",
+      "image_url": "/assets/activewear/green-shorts.jpg",
       "tags": ["shorts", "comfortable", "trendy"]
     },
     {
@@ -606,7 +606,7 @@
       "stock_quantity": 98,
       "rating": 4.9,
       "reviews_count": 42,
-      "image_url": "./assets/activewear/track-suit-hoodie.jpg",
+      "image_url": "/assets/activewear/track-suit-hoodie.jpg",
       "tags": ["tracksuit","hoodie", "comfortable", "trendy"]
     },
     {
@@ -623,7 +623,7 @@
       "stock_quantity": 98,
       "rating": 4.7,
       "reviews_count": 27,
-      "image_url": "./assets/activewear/workout-trouser.jpg",
+      "image_url": "/assets/activewear/workout-trouser.jpg",
       "tags": ["cotton","trousers", "comfortable", "trendy"]
     }    
   ],
